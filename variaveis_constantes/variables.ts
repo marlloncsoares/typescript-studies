@@ -34,6 +34,24 @@ let _name = "Eduarda";
 // Tipo string será inferido pelo valor "10"
 let value = "10";
 
+// -----------------------------------------------------------------------------
+// Momento da criação
+// -----------------------------------------------------------------------------
 
+// Declarando variável
+let y;
 
+// Atribuindo valor para a variável declarada
+y = 10;
 
+// Utilizando variável
+console.log(y);
+
+// Declarando variável
+let text: string;
+
+// Atribuindo valor
+text = "Lorem Ipsum";
+
+// Utilizando variável
+console.log(text);
