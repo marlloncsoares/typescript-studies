@@ -1,3 +1,5 @@
+# OBS: [EM CONSTRUÇÃO]
+
 # Tipos de dados em TypeScript
 O TypeScript é uma linguagem de programação fortemente tipada e, por esse motivo, as variáveis e métodos declarados devem vir acompanhadas de um tipo, que vai determinar o valor que deve ser recebido, no caso da variável e no caso do método, o tipo do retorno.
 

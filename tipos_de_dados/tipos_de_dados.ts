@@ -52,7 +52,82 @@ const months: Array<string> = [
                             ];
 console.log(months);
 
+// ----------------------------------------------------------------------------
+// Tipo Tuple
+// ----------------------------------------------------------------------------
 
+let x: [string, number] = ['Lorem Ipsum', 150];
+console.log(x);
+
+
+// ----------------------------------------------------------------------------
+// Tipo Enum
+// ----------------------------------------------------------------------------
+enum colors {red, green};
+const color = colors.red;
+
+console.log('colors', colors);
+console.log('color', color);
+
+// ----------------------------------------------------------------------------
+// Tipo any
+// ----------------------------------------------------------------------------
+
+let notIdentified: any = 10;
+console.log(typeof notIdentified, notIdentified);
+
+notIdentified = 'Lorem ipsum';
+console.log(typeof notIdentified, notIdentified);
+
+// ----------------------------------------------------------------------------
+// Tipo void
+// ----------------------------------------------------------------------------
+function log(): void {
+    console.log('Está mensagem é um log.');
+}
+log();
+
+// ----------------------------------------------------------------------------
+// Tipo null e undefined
+// ----------------------------------------------------------------------------
+
+let u: undefined = undefined;
+let n: null = null;
+
+console.log(typeof u, u);
+console.log(typeof n, n);
+
+// ----------------------------------------------------------------------------
+// Tipo never
+// ----------------------------------------------------------------------------
+// function error(message: string): never {
+//     throw new Error(message);
+// }
+// try {
+//     error('Tipo never');
+// } catch (e) {
+//     console.log(e);
+// }
 
 
 }
+
+// ----------------------------------------------------------------------------
+// Tipo Object
+// ----------------------------------------------------------------------------
+interface Person {
+    name: string;
+    age: number;
+}
+
+function greet(person: Person) {
+    return "Hello " + person.name;
+}
+
+const people = {
+    name: "Marllon Soares",
+    age: 26
+}
+const msg = greet(people);
+
+console.log(msg);
