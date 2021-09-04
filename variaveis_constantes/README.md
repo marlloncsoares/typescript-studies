@@ -82,3 +82,18 @@ const y = 10;
 
 Uma vez definida, o valor de uma constante permanece o mesmo durante toda
 execução de um programa.
+
+O código a seguir resultará em erro, pois, após definir um valor para uma
+constante, não é possível aterá-lo.
+
+~~~typescript
+// Declarando constantes
+const _name: string = "José";
+const age: 30;
+
+// Isto está incorreto, pois o valor de age já foi definido e não pode mudar.
+age += 1;
+
+// Imprime _name e age no console
+console.log(_name, age);
+~~~

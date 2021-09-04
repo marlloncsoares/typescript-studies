@@ -37,3 +37,7 @@ var text;
 text = "Lorem Ipsum";
 // Utilizando variável
 console.log(text);
+var _name = "José";
+var age;
+age += 1;
+console.log(_name, age);
