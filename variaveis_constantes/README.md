@@ -39,8 +39,9 @@ let amount = "50"
 
 ## Momento da declaração
 
-Uma variável TypeScript deve ser declarada antes de ser utilizada.
+Uma variável TypeScript deve ser declarada antes de ser utilizada. Exemplos:
 
+Declarando e atribuindo avlor separadamente
 ~~~typescript
 // Variável declarada
 let x;
@@ -48,3 +49,36 @@ let x;
 // Valor atribuído
 x = 10;
 ~~~
+
+Declarando e atribuindo valor ao mesmo tempo
+~~~typescript
+// Declarando e atribuindo valor ao mesmo tempo
+let x = 10;
+~~~
+
+Tentar acessar uma variável que ainda não foi declarada também causará um erro
+de compilação, exemplo:
+
+~~~typescript
+// Variável declarada e atribuída
+let x = 10;
+
+// Tentativa de utilizar uma variável que foi declarada
+console.log(y);
+~~~
+
+# Utilizando constantes
+
+Uma constante armazena um dado na memória, porém, o valor de uma constante não
+pode ser alterado. Exemplo:
+
+~~~typescript
+// Variável
+let x = 10;
+
+// Constante
+const y = 10;
+~~~
+
+Uma vez definida, o valor de uma constante permanece o mesmo durante toda
+execução de um programa.

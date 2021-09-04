@@ -1,4 +1,6 @@
+// -----------------------------------------------------------------------------
 // Formas de declarar variáveis
+// -----------------------------------------------------------------------------
 
 let employee: string = "José da Silva";
 console.log(employee);
@@ -12,7 +14,9 @@ console.log(employee_2);
 let _employee: string = "Gustavo";
 console.log(_employee);
 
+// -----------------------------------------------------------------------------
 // Variáveis declaradas com inferência de tipo
+// -----------------------------------------------------------------------------
 
 // Variável do tipo string declarada por inferência de tipo
 let user = "Phil";
@@ -24,7 +28,7 @@ let _user = "Tony";
 // Tipo number será inferido pelo valor 1
 let id = 1;
 
-// Tipo string será inferido pelo valor "Eduardo"
+// Tipo string será inferido pelo valor "Eduarda"
 let _name = "Eduarda";
 
 // Tipo string será inferido pelo valor "10"
